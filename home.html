@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventz</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <h1 >Eventz</h1>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li class="create"><a href="create.html"> <img src="c.jpeg" alt="Create Icon" class="createimg"> <span>Create</span></a></li>
+            <li class="liked"><a href="liked.html"><img src="l.jpg" alt="liked Icon" class="likedimg"><span>liked</span></a></li>
+            <li class="profile"> <a href="#"><img src="pp.jpg" alt="Profile Pic" class="profile-pic"><span class="text">Profile &#9660;</span></a>
+                <div class="dropdown">
+                    <ul class="profile-options">
+                        <li><a href="myevent.html">My Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="background-image">
+        <div class="textblock">
+            <h4> SPEND YOUR TIME </h4>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="featured-events">
+        <h2>Featured Events</h2>
+        <div class="event-card">
+          <img src="music.jpg" alt="Event 1">
+          <h3>Music</h3>
+        </div>
+        <div class="event-card">
+          <img src="holiday.avif" alt="Event 2">
+          <h3>Holiday</h3>
+        </div>
+        <div class="event-card">
+          <img src="health.jpg" alt="Event 3">
+          <h3>Health</h3>
+        </div>
+        <div class="event-card">
+            <img src="night.jpg" alt="Event 3">
+            <h3>Nightclub</h3>
+        </div>
+        <div class="event-card">
+            <img src="hobbies.png" alt="Event 3">
+            <h3>Hobbies</h3>
+        </div>
+      </div>
+      <div class="event-details">
+        <h2 style="margin-top: 35px;">Events</h2>
+        <div class="event-info">
+          <div class="event">
+            <img src="me1.jpg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">BlackPink Concert</h3>
+              <p>Date: February 25, 2024</p>
+              <p>Time: 7:00 PM - 10:00 PM</p>
+              <p>Location: Venue Name 1, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton" onclick="toggleliked()">❤</span>
+              <script>
+                liked = false;
+                function toggleliked() {
+                  if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton").style.color = "gray";
+                        
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+          <div class="event">
+            <img src="me2.jpg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">Taylor Concert</h3>
+              <p>Date: March 15, 2024</p>
+              <p>Time: 6:00 PM - 9:00 PM</p>
+              <p>Location: Venue Name 2, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton2" onclick="toggleliked2()">❤</span>
+            <script>
+              liked = false;
+                function toggleliked2() {
+                    if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton2").style.color = "gray";
+                        
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton2").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+          <div class="event">
+            <img src="holi1.jpeg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">Event Name 3</h3>
+              <p>Date: April 5, 2024</p>
+              <p>Time: 5:00 PM - 8:00 PM</p>
+              <p>Location: Venue Name 3, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton3" onclick="toggleliked3()">❤</span>
+            <script>
+              liked = false;
+                function toggleliked3() {
+                    if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton3").style.color = "gray";
+                        
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton3").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+          <div class="event">
+            <img src="pic1.jpeg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">Event Name 4</h3>
+              <p>Date: April 5, 2024</p>
+              <p>Time: 5:00 PM - 8:00 PM</p>
+              <p>Location: Venue Name 3, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton4" onclick="toggleliked4()">❤</span>
+              <script>
+                liked = false;
+                function toggleliked4() {
+                    if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton4").style.color = "gray";
+                        
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton4").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+          <div class="event">
+            <img src="pic2.jpeg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">Event Name 5</h3>
+              <p>Date: April 5, 2024</p>
+              <p>Time: 5:00 PM - 8:00 PM</p>
+              <p>Location: Venue Name 3, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton5" onclick="toggleliked5()">❤</span>
+              <script>
+                liked = false;
+                function toggleliked5() {
+                    if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton5").style.color = "gray";
+                        
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton5").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+          <div class="event">
+            <img src="holi1.jpeg" alt="Event Image">
+            <div class="info">
+              <h3 class="topic">Event Name 6</h3>
+              <p>Date: April 5, 2024</p>
+              <p>Time: 5:00 PM - 8:00 PM</p>
+              <p>Location: Venue Name 3, City</p>
+              <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="register-button">Register</button>
+              <span class="heart" id="likedButton6" onclick="toggleliked6()">❤</span>
+              <script>
+                liked = false;
+                function toggleliked6() {
+                    if (liked) {
+                        liked = false;
+                        document.getElementById("likedButton6").style.color = "gray";
+                    } else {
+                        liked = true;
+                        document.getElementById("likedButton6").style.color = "red";
+                    }
+                }
+            </script>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Mokili. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
