@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the viewport */
+}
+
+/* Header styles */
+.header {
+
+    position: relative;
+    padding: 2px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start; /* Align items to the top */
+}
+
+/* Event name styles */
+h1 {
+    color:black;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+.create, .liked{
+    display: block;
+    size-adjust: 10px;
+}
+
+.createimg, .likedimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 50px; /* Adjust spacing between icon and text */
+}
+
+/* Profile dropdown styles */
+.profile-options {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color:rgba(82, 81, 81, 0.715) ; /* Change background color as needed */
+    border-radius: 10px;
+    padding: 10px;
+    display:none;
+    z-index: 1;
+
+}
+
+.profile:hover .profile-options {
+    display:block;
+}
+
+.profile-options li {
+    margin-bottom: 5px;
+}
+
+.profile:hover .profile-options li a {
+    display:block;
+}
+
+.profile-options li a {
+    color:black;
+    text-decoration:none;
+    font-size: 14px;
+    display:inline-block;
+}
+
+
+/* Background image */
+.background-image {
+    position: absolute;
+    top: 65px; /* Adjust as needed based on the height of the event name and options */
+    left: 0;
+    width: 100%;
+    height: calc(300% - 10px); /* Adjust as needed */
+    background-image: url('bp.jpg'); /* Replace 'header-background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.textblock{
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+    background-color: rgba(58, 57, 57, 0);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main {
+    margin-top:250px;
+    padding: 20px;
+}
+  
+h2 {
+    margin-bottom: 15px;
+}
+.featured-events {
+    margin-top: 5px;
+}
+  
+.event-card {
+    margin-top: 30px;
+    width: 10%; /* Adjust the width as needed */
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align:auto;
+}
+  
+.event-card:last-child {
+    margin-right: 0;
+}
+  
+.event-card img {
+    width: 80%;
+    height: 20%;
+    border-radius: 15px;
+}
+  
+.event-card h3 {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.event-details {
+    margin-top: 20px;
+}
+  
+.event-info {
+    display:flex;
+    flex-wrap: wrap;
+}
+  
+.event {
+    width: calc(22% - 20px); /* Adjust the width as needed */
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(164, 138, 138, 0.1);
+    
+}
+  
+.event:last-child {
+    margin: right 0; ;
+}
+  
+.event img {
+    width: 95%;
+    height:auto;
+    border-radius: 5px;
+}
+  
+.event .info {
+    margin-top: 10px;
+}
+  
+.event h3 {
+    margin-bottom: 10px;
+}
+  
+.event p {
+    margin: 5px 0;
+}
+.topic {
+    font-style:normal;
+    font-size:large;
+
+}
+.register-button{
+   
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: medium;
+
+}
+.heart {
+
+    margin-right: 10px;
+    top: 15px;
+    font-size:larger;
+    color: gray;
+    cursor:pointer;
+}
+.heart:hover {
+    color: red;
+}
+  
+footer {
+    background-color:rgb(26, 26, 67);
+    color: #fff;
+    text-align: center;
+    padding: 10px ;
+    margin-top: auto; /* Push footer to the bottom */
+}
